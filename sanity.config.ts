@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'deloach-blog',
 
-  projectId: 'ptwzsi5h',
+  projectId: `${process.env.SANITY_PROJECT_ID}`,
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
